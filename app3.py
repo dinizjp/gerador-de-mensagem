@@ -58,7 +58,7 @@ def isolate_balloon_and_ocr(opencv_image):
 
 
 # Define o caminho do Tesseract OCR se não estiver no PATH do sistema
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 
 # Interface do aplicativo Streamlit

@@ -69,7 +69,7 @@ if uploaded_files:
     sorteio_nums = [st.text_input(f"Digite o número do sorteio para {uploaded_file.name}", key=uploaded_file.name) for uploaded_file in uploaded_files]
 
     if st.button('Gerar Mensagem'):
-        mensagem = "E VAMOS AOS VENCEDORES DA NOIIITEEE!!!\n\n"
+        mensagem = "*E VAMOS AOS VENCEDORES DA NOIIITEEE!!!*\n\n"
         all_data = []
 
         for uploaded_file, sorteio_num in zip(uploaded_files, sorteio_nums):
@@ -87,6 +87,6 @@ if uploaded_files:
 
         # Construir a mensagem com os dados ordenados
         for sorteio_num, name in all_data:
-            mensagem += f"SORTEIO #{sorteio_num}\n{name}\n\n"
+            mensagem += f"*SORTEIO #{sorteio_num}*\n{name}\n\n"
 
         st.text_area("Mensagem gerada", mensagem, height=300)
